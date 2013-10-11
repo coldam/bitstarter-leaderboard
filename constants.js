@@ -27,7 +27,7 @@ var Constants = {
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("November 8, 2013"),
   PRODUCT_NAME: "Dayla, I love you",
-  PRODUCT_SHORT_DESCRIPTION: "Dayla Gerstner, I love everything about you.  Every day that love continues to grow.  You've inspired me to be a better person.  I cherish how you trust me and your willingness to try new things. You make me so happy. I can't picture the rest of my life without you by my side.",
+  PRODUCT_SHORT_DESCRIPTION: "Dayla Gerstner, I love everything about you.  Every day that love continues to grow.  You've inspired me to be a better person.  I cherish our trust and your willingness to try new things. You make me so happy. I can't picture the rest of my life without you by my side.",
   PRODUCT_QUESTION: "Will You Marry Me?",
   TWITTER_USERNAME: "corygassner",
   TWITTER_TWEET: "This crowdfunder looks interesting.",
