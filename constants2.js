@@ -21,13 +21,13 @@
     - http://webdesign.about.com/od/localization/l/blhtmlcodes-cur.htm#codes
 */
 var Constants = {
-  APP_NAME: "Dayla Gerster", 
+  APP_NAME: "Dreame", 
   FUNDING_TARGET: 10.00,
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("November 8, 2013"),
-  PRODUCT_NAME: "Dayla, I love you",
-  PRODUCT_SHORT_DESCRIPTION: "Dayla Gerstner",
+  PRODUCT_NAME: "Dreame: Dream With Me",
+  PRODUCT_SHORT_DESCRIPTION: "A place to share your dreams.",
   TWITTER_USERNAME: "corygassner",
   TWITTER_TWEET: "This crowdfunder looks interesting.",
   COINBASE_PREORDER_DATA_CODE: "ddd14b40f3313ecc8b405471f6f9f24f",
