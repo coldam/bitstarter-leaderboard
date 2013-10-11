@@ -43,6 +43,7 @@ var indexfn = function(request, response) {
 	name: Constants.APP_NAME,
 	title: "Welcome to " + Constants.APP_NAME,
 	product_name: Constants.PRODUCT_NAME,
+  product_question: Constants.PRODUCT_QUESTION,
 	twitter_username: Constants.TWITTER_USERNAME,
 	twitter_tweet: Constants.TWITTER_TWEET,
 	product_short_description: Constants.PRODUCT_SHORT_DESCRIPTION,
