@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d396qusza40orc.cloudfront.net/startup/code/jquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap.js"></script>
+    <script src="js/angular.min.js" ></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/google-analytics.js"></script>
+    <script src="https://coinbase.com/assets/button.js"></script>
+    <script src="js/coinbase-post-payment.js"></script>
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="stylesheet" href="css/bitstarter-styles.css">
+    <link rel="stylesheet" href="css/pricing-table.css">
+  </head>
+  <body>
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+          data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><%= name %></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="/wedding">Wedding</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+      <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+      <!-- http://stackoverflow.com/a/12270322 -->
+      <div class="container">
+        <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+        <!-- www.google.com/fonts/specimen/Ubuntu -->
+        <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+        <div class="row-fluid heading">
+          <div class="span12">
+            <h1><a href="/">Wedding Information</a></h1>
+          </div>
+        </div>
+        <div class="row-fluid subheading">
+          <div class="span12">
+            <!-- Special typography from Bootstrap for lead paragraph. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+            <p class="lead">Wedding Date: September 20, 2014</p>
+          </div>
+        </div>
+        <div class="row-fluid heading">
+          <div class="span12">
+            <h1>Can't wait to see you there!</h1>
+          </div>
+        </div>
+        <!--<div class="row-fluid section1">
+          <div class="span5 offset1 asset">
+            <img class="img-polaroid" alt="Happy" src="http://wp.patheos.com.s3.amazonaws.com/blogs/wrestlingwithyourself/files/2013/02/heart-care.jpg">
+          </div>
+        </div> -->
+        <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+        <!-- http://creativecommons.org/licenses/ -->
+        <div class="row-fluid footer">
+          <div class="span12">
+            <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+            By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
+          </div>
+        </div>
+      </div>
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-43006726-1', 'coldam-bitstarter.herokuapp.com');
+      ga('send', 'pageview');
+      </script>
+    </body>
+  </html>

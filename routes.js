@@ -84,6 +84,14 @@ var refresh_orderfn = function(request, response) {
     global.db.Order.refreshFromCoinbase(cb);
 };
 
+var weddingfn = function(request, response) {
+    var successcb = function(wedding_json) {
+  response.render("weddingpage", {wedding: wedding_json});
+    };
+    var errcb = build_errfn('error retrieving wedding', response);
+    global.db.Order.allToJSON(successcb, errcb);
+};
+
 
 /*
    Helper functions which create a ROUTES array for export and use by web.js
@@ -113,7 +121,8 @@ var ROUTES = define_routes({
     '/': indexfn,
     '/orders': orderfn,
     '/api/orders': api_orderfn,
-    '/refresh_orders': refresh_orderfn
+    '/refresh_orders': refresh_orderfn,
+    '/wedding': weddingfn
 });
 
 module.exports = ROUTES;
