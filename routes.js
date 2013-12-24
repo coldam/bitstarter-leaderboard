@@ -85,19 +85,18 @@ var refresh_orderfn = function(request, response) {
 };
 
 var weddingfn = function(request, response) {
-    var successcb = function(wedding_json) {
-  response.render("weddingpage", {wedding: wedding_json});
-    };
-    var errcb = build_errfn('error retrieving wedding', response);
-    global.db.Order.allToJSON(successcb, errcb);
+  response.render("weddingpage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
 };
 
 var proposalfn = function(request, response) {
-    var successcb = function(wedding_json) {
-  response.render("proposalpage", {proposal: proposal_json});
+  response.render("proposalpage", {
     };
-    var errcb = build_errfn('error retrieving proposal', response);
-    global.db.Order.allToJSON(successcb, errcb);
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
 };
 
 /*
