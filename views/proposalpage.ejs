@@ -32,8 +32,8 @@
           <a class="brand" href="#"><%= name %></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="/proposal">Proposal</a></li>
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="/proposal">Proposal</a></li>
               <li><a href="/coryproposal">Cory Proposal</a></li>
               <li><a href="/daylaproposal">Dayla Proposal</a></li>
               <li><a href="/wedding">Wedding</a></li>
@@ -53,26 +53,26 @@
         <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
         <div class="row-fluid heading">
           <div class="span12">
-            <h1><a href="/">Welcome!</a></h1>
+            <h1><%= product_name %></h1>
           </div>
         </div>
         <div class="row-fluid subheading">
           <div class="span12">
             <!-- Special typography from Bootstrap for lead paragraph. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-            <p class="lead">Welcome to our Wedding Website! </p>
-            <p class="lead">This is the site where it all began! Literally...</p> <!--- make literally italicized -->
-            <p class="lead">Check out the Proposal tab to see the page Cory built for his proposal!</p>
-            <p> </p>
-            <p class="lead">We ask that you check back regularly as we will be adding more fun pages</p>
-            <p class="lead">with our 20 year history together, bridal party information and more wedding details.</p>
+            <p class="lead"><%= product_short_description %></p>
+          </div>
+        </div>
+        <div class="row-fluid heading">
+          <div class="span12">
+            <h1><%= product_question %></h1>
           </div>
         </div>
         <div class="row-fluid section1">
-          <div align="center">
-            <img class="spotlight" alt="" aria-describedby="fbPhotosSnowliftCaption" aria-busy="false" src="https://scontent-a-ord.xx.fbcdn.net/hphotos-ash3/1393717_666529064707_1463533638_n.jpg" style="width: 293px; height: 520px;">
+          <div class="span12" align="center">
+            <img class="img-polaroid" alt="Happy" src="http://wp.patheos.com.s3.amazonaws.com/blogs/wrestlingwithyourself/files/2013/02/heart-care.jpg" width="506" height="380">
           </div>
-        </div>
+        </div> 
         <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
         <!-- http://creativecommons.org/licenses/ -->
         <div class="row-fluid footer">

@@ -92,6 +92,13 @@ var weddingfn = function(request, response) {
     global.db.Order.allToJSON(successcb, errcb);
 };
 
+var proposalfn = function(request, response) {
+    var successcb = function(wedding_json) {
+  response.render("proposalpage", {proposal: proposal_json});
+    };
+    var errcb = build_errfn('error retrieving proposal', response);
+    global.db.Order.allToJSON(successcb, errcb);
+};
 
 /*
    Helper functions which create a ROUTES array for export and use by web.js
@@ -122,7 +129,8 @@ var ROUTES = define_routes({
     '/orders': orderfn,
     '/api/orders': api_orderfn,
     '/refresh_orders': refresh_orderfn,
-    '/wedding': weddingfn
+    '/wedding': weddingfn,
+    '/proposal': proposalfn
 });
 
 module.exports = ROUTES;
