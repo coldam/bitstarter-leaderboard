@@ -93,7 +93,6 @@ var weddingfn = function(request, response) {
 
 var proposalfn = function(request, response) {
   response.render("proposalpage", {
-    };
     name: Constants.APP_NAME,
     title: Constants.APP_NAME
   });
