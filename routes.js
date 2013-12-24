@@ -92,9 +92,13 @@ var weddingfn = function(request, response) {
 };
 
 var proposalfn = function(request, response) {
-  response.render("proposalpage", {
-    name: Constants.APP_NAME,
-    title: Constants.APP_NAME
+    response.render("proposalpage", {
+  name: Constants.APP_NAME,
+  title: Constants.APP_NAME,
+  product_name: Constants.PRODUCT_NAME,
+  product_question: Constants.PRODUCT_QUESTION,
+  twitter_username: Constants.TWITTER_USERNAME,
+  twitter_tweet: Constants.TWITTER_TWEET
   });
 };
 
