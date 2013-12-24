@@ -98,10 +98,18 @@ var proposalfn = function(request, response) {
   product_name: Constants.PRODUCT_NAME,
   product_question: Constants.PRODUCT_QUESTION,
   twitter_username: Constants.TWITTER_USERNAME,
-  twitter_tweet: Constants.TWITTER_TWEET
+  twitter_tweet: Constants.TWITTER_TWEET,
+  product_short_description: Constants.PRODUCT_SHORT_DESCRIPTION,
+  coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
   });
 };
 
+var coryproposalfn = function(request, response) {
+  response.render("coryproposalpage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
+};
 /*
    Helper functions which create a ROUTES array for export and use by web.js
 
@@ -132,7 +140,8 @@ var ROUTES = define_routes({
     '/api/orders': api_orderfn,
     '/refresh_orders': refresh_orderfn,
     '/wedding': weddingfn,
-    '/proposal': proposalfn
+    '/proposal': proposalfn,
+    '/coryproposal': coryproposalfn
 });
 
 module.exports = ROUTES;
