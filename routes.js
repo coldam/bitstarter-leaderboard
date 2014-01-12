@@ -117,6 +117,13 @@ var daylaproposalfn = function(request, response) {
     title: Constants.APP_NAME
   });
 };
+
+var aboutfn = function(request, response) {
+  response.render("aboutpage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
+};
 /*
    Helper functions which create a ROUTES array for export and use by web.js
 
@@ -149,7 +156,8 @@ var ROUTES = define_routes({
     '/wedding': weddingfn,
     '/proposal': proposalfn,
     '/coryproposal': coryproposalfn,
-    '/daylaproposal': daylaproposalfn
+    '/daylaproposal': daylaproposalfn,
+    '/about': aboutfn
 });
 
 module.exports = ROUTES;
