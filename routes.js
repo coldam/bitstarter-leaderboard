@@ -124,6 +124,27 @@ var aboutfn = function(request, response) {
     title: Constants.APP_NAME
   });
 };
+
+var rsvpfn = function(request, response) {
+  response.render("rsvppage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
+};
+
+var registryfn = function(request, response) {
+  response.render("registrypage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
+};
+
+var hotelfn = function(request, response) {
+  response.render("hotelpage", {
+    name: Constants.APP_NAME,
+    title: Constants.APP_NAME
+  });
+};
 /*
    Helper functions which create a ROUTES array for export and use by web.js
 
@@ -157,7 +178,10 @@ var ROUTES = define_routes({
     '/proposal': proposalfn,
     '/coryproposal': coryproposalfn,
     '/daylaproposal': daylaproposalfn,
-    '/about': aboutfn
+    '/about': aboutfn,
+    '/rsvp': rsvpfn,
+    '/registry': registryfn,
+    '/hotel': hotelfn
 });
 
 module.exports = ROUTES;

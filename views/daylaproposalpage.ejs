@@ -33,12 +33,24 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              <li><a href="/proposal">Proposal</a></li>
-              <li><a href="/coryproposal">Cory Proposal</a></li>
-              <li class="active"><a href="/daylaproposal">Dayla Proposal</a></li>
-              <li><a href="/wedding">Wedding</a></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="dLabel">Proposal</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="/proposal">The Proposal</a></li>
+                    <li><a href="/coryproposal">Cory's Perspective</a></li>
+                    <li class="active"><a href="/daylaproposal">Dayla's Perspective</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="dLabel">Wedding</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="/wedding">Wedding Day</a></li>
+                    <li><a href="/rsvp">RSVP</a></li>
+                    <li><a href="/registry">Registries</a></li>
+                    <li><a href="/hotel">Hotel Accommodations</a></li>
+                  </ul>
+              </li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="#contact">Contact</a></li>
             </ul>
             </div><!--/.nav-collapse -->
           </div>
