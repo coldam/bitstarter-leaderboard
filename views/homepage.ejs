@@ -104,30 +104,6 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-43006726-1', 'coldam-bitstarter.herokuapp.com');
       ga('send', 'pageview');
-
-$(function () {
-  $('.dropdown-toggle').dropdown();
-
-  $('.linkcheck', this).click(function(){
-    var url = $(this).attr('href');
-    alert("link clicked:" + url);
-    if(url.match(/^http:/)) {
-      window.location.href = url;
-    }
-  });
-
-  // fix by RobDodson: github.com/twitter/bootstrap/issues/4550
-  // Kills regular links in browsers though, but they will be redirected by linkcheck above
-  $('.dropdown a').click(function(e) {
-    e.preventDefault();
-    setTimeout($.proxy(function() {
-      if ('ontouchstart' in document.documentElement) {
-        $(this).siblings('.dropdown-backdrop').off().remove();
-      }
-    }, this), 0);
-  });
-});
-
       </script>
     </body>
   </html>
